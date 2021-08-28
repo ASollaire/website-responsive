@@ -13,17 +13,77 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 </head>
 
-<body id="root">
-    <div class="navbar">
-        <div class="container">
-            <h1 class="logo">Loruki</h1>
-            <ul>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="Features.html">Feature</a></li>
-                <li><a href="Docs.html">Docs</a></li>
-            </ul>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container flex">
+            <h1 class="logo">Loruki.</h1>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="Index.html">Home</a></li>
+                    <li class="main-nav__item"><a href="Features.html">Feature</a></li>
+                    <li class="main-nav__item"><a href="Docs.html">Docs</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+    <main role="main">
+        <!-- SHOWCASE -->
+        <section class="showcase">
+            <div class="container grid">
+                <div class="showcase__text">
+                    <h1 class="showcase__title">Easier Deployment</h1>
+                    <p class="showcase__decription">Deploy web apps of all kinds, from large scale enterprise APIs to
+                        static websites for individuals.
+                        Fill
+                        out the form to try a demo of our platform</p>
+                    <a href="features.html" class="btn btn-outline">Read More</a>
+                </div>
+                <div class="showcase__card card">
+                    <h2 class="showcase__subtitle">Request a Demo</h2>
+                    <form action="" class="showcase__form">
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="company" placeholder="Company Name">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="email" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="container">
+                <h3 class="stats__title text-center my-1"> Welcome to the best platform for building applications of all
+                    types with modern architecture and scaling</h3>
+
+                <div class="grid grid-3 text-center my-4">
+                    <div>
+                        <i class="fas fa-server fa-3x"></i>
+                        <h3>10,349,405</h3>
+                        <p class="text-secondary">Deployments</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-upload fa-3x"></i>
+                        <h3>987 TB</h3>
+                        <p class="text-secondary">Published</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                        <h3>2,343,265</h3>
+                        <p class="text-secondary">Projects</p>
+                    </div>
+                </div>
+            </div>
+            <!-- STATS -->
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 
 </html>

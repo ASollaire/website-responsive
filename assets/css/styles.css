@@ -1,28 +1,210 @@
 /* IMPORTED FONTS */
 /* -- DEVELOP */
 @font-face {
-    font-family: "Lato";
-    src: url(../vendor/dev/webfonts/google/Lato-Light.ttf) format("truetype");
-    font-weight: 300;
+  font-family: "Lato";
+  src: url(../vendor/dev/webfonts/google/Lato-Light.ttf) format("truetype");
+  font-weight: 300;
 }
 /* -- PUBLISH */
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
 
 /* SETUP */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-#root {
-    font-family: "Lato", Helvetica, sans-serif;
+:root {
+  --primary-color: #047ed0;
 }
 
-ul {
-    list-style: none;
+body {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
 }
 
 a {
     text-decoration: none;
 }
+
+/* UTILITIES */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: visible;
+}
+
+.gid-3 {
+    grid-template-columns: repeat(3 1fr);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.btn:hover {
+    transform: scale(.98);
+}
+
+
+
+
+/* HEADER */
+.main-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.main-nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+}
+
+.main-nav__item a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.main-nav__item a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.main-header .flex {
+  justify-content: space-between;
+}
+
+/* MAIN */
+/* SHOWCASE */
+
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase::before, .showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left:0;
+    background-color: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 45%;
+}
+
+.showcase__title{
+    font-size: 40px;
+}
+
+.showcase__subtitle {
+    color: #000;
+}
+
+.showcase__description {
+    margin: 20px 0;
+}
+
+.showcase__card {
+    position: relative;
+    top: 60px;
+    width: 400px;
+    height: 350px;
+    z-index: 100;
+}
+
+.showcase__form .form-control {
+    margin: 30px 0;
+}
+
+.showcase__form input[type="text"],
+.showcase__form input[type=email] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase__form input:focus {
+    outline: none;
+}
+
+/* STATS */
+.stats {
+   padding-top: 100px;
+}
+
+
+
+
+
+
