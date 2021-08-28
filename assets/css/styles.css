@@ -1,0 +1,28 @@
+/* IMPORTED FONTS */
+/* -- DEVELOP */
+@font-face {
+    font-family: "Lato";
+    src: url(../vendor/dev/webfonts/google/Lato-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+/* -- PUBLISH */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
+
+/* SETUP */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    font-family: "Lato", Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
