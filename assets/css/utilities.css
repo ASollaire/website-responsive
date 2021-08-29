@@ -14,14 +14,37 @@
   margin: 10px;
 }
 
+/* BACKGROUND */
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+}
+
+/* BUTTONS */
 .btn {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background: var(--primary-color);
-  color: #fff;
   border: none;
   border-radius: 10px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+}
+
+.btn-light {
+    background-color: var(--light-color);
+    color: #333;
 }
 
 .btn-outline {
@@ -31,6 +54,23 @@
 
 .btn:hover {
   transform: scale(0.98);
+}
+/* TEXT */
+
+.lead {
+    font-size: 20px
+}
+.sm {
+    font-size: 1rem;
+}
+.md {
+    font-size: 2rem;
+}
+.lg {
+    font-size: 3rem;
+}
+.xl {
+    font-size: 4rem;
 }
 
 .text-center {
@@ -45,6 +85,10 @@
   height: 100%;
 }
 
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,10 +97,6 @@
   align-items: center;
   height: 100%;
   overflow: visible;
-}
-
-.grid-3 {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 /* MARGINS */
@@ -102,7 +142,7 @@
 
 /* PADDINGS */
 .p-1 {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .p-2 {

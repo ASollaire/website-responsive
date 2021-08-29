@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/utilities.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- DEVELOP -->
-    <link rel="stylesheet" href="assets/vendor/dev/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/dev/css/all.css">
     <!-- PUBLISH -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
 </head>
@@ -19,10 +19,10 @@
         <div class="container flex">
             <h1 class="logo">Loruki.</h1>
             <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="Index.html">Home</a></li>
-                    <li class="main-nav__item"><a href="Features.html">Feature</a></li>
-                    <li class="main-nav__item"><a href="Docs.html">Docs</a></li>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="Index.html">Home</a></li>
+                    <li class="nav__item"><a href="Features.html">Feature</a></li>
+                    <li class="nav__item"><a href="Docs.html">Docs</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,6 +56,7 @@
                 </div>
             </div>
         </section>
+        <!-- STATS -->
         <section class="stats">
             <div class="container">
                 <h3 class="stats__title text-center my-1"> Welcome to the best platform for building applications of all
@@ -64,26 +65,99 @@
                 <div class="grid grid-3 text-center my-4">
                     <div>
                         <i class="fas fa-server fa-3x"></i>
-                        <h3 class= "stats__subtitle">10,349,405</h3>
+                        <h3 class="stats__subtitle">10,349,405</h3>
                         <p class="stats__info text-secondary">Deployments</p>
                     </div>
                     <div>
                         <i class="fas fa-upload fa-3x"></i>
-                        <h3 class= "stats__subtitle">987 TB</h3>
+                        <h3 class="stats__subtitle">987 TB</h3>
                         <p class="stats__info text-secondary">Published</p>
                     </div>
                     <div>
                         <i class="fas fa-project-diagram fa-3x"></i>
-                        <h3 class= "stats__subtitle">2,343,265</h3>
+                        <h3 class="stats__subtitle">2,343,265</h3>
                         <p class="stats__info text-secondary">Projects</p>
                     </div>
                 </div>
             </div>
-            <!-- STATS -->
+        </section>
+        <!-- CLI -->
+        <section class="cli">
+            <div class="container grid">
+                <img src="assets/images/cli.png" alt="Command line interface for Loruki" class="grid__item--first">
+                <div class="card">
+                    <h3>Easy to use, cross platform CLI</h3>
+                </div>
+                <div class="card">
+                    <h3>Deploy in seconds</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Cloud -->
+        <section class="cloud bg-primary my-2 py-2">
+            <div class="container grid">
+                <div class="text-center">
+                    <h2 class="lg">Extrem Cloud Hosting</h2>
+                    <p class="lead m-1">
+                        Cloud hosting like you have never seen. Fast, efficient and scalable
+                    </p>
+                    <a href=features.html" class="btn btn-dark">Read More</a>
+                </div>
+                <img src="assets/images/cloud.png" alt="Diagram for the hosting with Loruki">
+            </div>
+        </section>
+        <!-- Languages -->
+        <section class="languages">
+            <h2 class="md text-center my-2">Supported Languages</h2>
+            <div class="container flex flex--wrap">
+                <div class="card card--centered">
+                    <h4>Node.js</h4>
+                    <img src="assets/images/logos/node.png" alt="Node.js logo">
+                </div>
+                <div class="card card--centered">
+                    <h4>Python</h4>
+                    <img src="assets/images/logos/python.png" alt="Python logo">
+                </div>
+                <div class="card card--centered">
+                    <h4>C#</h4>
+                    <img src="assets/images/logos/csharp.png" alt="C# logo">
+                </div>
+                <div class="card card--centered">
+                    <h4>Ruby</h4>
+                    <img src="assets/images/logos/ruby.png" alt="Ruby logo">
+                </div>
+                <div class="card card--centered">
+                    <h4>PHP</h4>
+                    <img src="assets/images/logos/php.png" alt="PHP logo">
+                </div>
+                <div class="card card--centered">
+                    <h4>Scala</h4>
+                    <img src="assets/images/logos/scala.png" alt="Scala logo">
+                </div>
+            </div>
         </section>
     </main>
-
-    <footer></footer>
+    <footer class="main-footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1 class="logo">Loruki</h1>
+                <p class="logo">Copyright &copy; 2021</p>
+            </div>
+            <nav class="footer-nav">
+                <ul class="nav__list flex">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="Features.html">Feature</a></li>
+                    <li class="nav__item"><a href="Docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
