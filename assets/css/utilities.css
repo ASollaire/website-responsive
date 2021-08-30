@@ -99,6 +99,15 @@
   overflow: visible;
 }
 
+.item--centered {
+  justify-self: center;
+  align-self: center;
+}
+
+.item--end {
+  justify-self: flex-end;
+}
+
 /* MARGINS */
 .m-1 {
   margin: 1rem;
