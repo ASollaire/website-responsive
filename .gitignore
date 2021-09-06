@@ -1,6 +1,6 @@
 
-# **/dev
-# dev/
+**/dev
+dev/
 .vscode
 .vscode/*
 !.vscode/settings.json

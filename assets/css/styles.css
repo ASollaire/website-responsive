@@ -1,12 +1,12 @@
 /* IMPORTED FONTS */
 /* -- DEVELOP */
-@font-face {
+/* @font-face {
   font-family: "Lato";
   src: url(../vendor/dev/webfonts/google/Lato-Light.ttf) format("truetype");
   font-weight: 300;
-}
+} */
 /* -- PUBLISH */
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 /* KEY COLORS */
 :root {
