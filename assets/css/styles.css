@@ -46,7 +46,8 @@ img {
   width: 100%;
 }
 
-code, pre {
+code,
+pre {
   background-color: #333;
   color: #fff;
   padding: 20px 10px;
@@ -71,7 +72,6 @@ code, pre {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .main-nav .nav__item a,
 .footer-nav .nav__item a {
   color: #fff;
@@ -91,20 +91,17 @@ code, pre {
 }
 
 .section-nav .nav__item a {
-  color:#333;
+  color: #333;
   display: inline-block;
   width: 100%;
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
-
 }
 
 .section-nav .nav__item a:hover,
-.section-nav .nav__item a:focus { 
+.section-nav .nav__item a:focus {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
-
-
 
   /* background-color: rgba(0, 0, 0, 0.1); */
 }
@@ -170,6 +167,7 @@ code, pre {
   width: 350px;
   height: 350px;
   z-index: 100;
+  animation: slideInFromRight 1s ease-in;
 }
 
 .showcase__form .form-control {
@@ -191,7 +189,8 @@ code, pre {
 
 /* STATS */
 .stats {
-  padding-top: 100px;
+  padding-top: 300px;
+  animation: slideInFromBottom 1s ease-in;
 }
 
 .stats__title {
@@ -253,9 +252,8 @@ code, pre {
   justify-self: center;
 }
 
-
-
-.features, .features-sub{
+.features,
+.features-sub {
   text-align: center;
 }
 
@@ -279,7 +277,54 @@ code, pre {
   list-style: none;
 }
 
-/* MEDIA */
+/* ANIMATIONS */
+.showcase__text,
+.features__text,
+.docs__text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --- MEDIA --- */
 @media screen and (min-width: 768px) {
   .stats .grid,
   .cli .grid,
@@ -330,6 +375,10 @@ code, pre {
   }
 
   /* STATS */
+  .stats {
+    padding-top: 100px;
+  }
+
   .stats .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -352,9 +401,9 @@ code, pre {
 
   /* FEATURES, DOCS */
   .features__image,
-.docs__image {
-  justify-self: flex-end;
-}
+  .docs__image {
+    justify-self: flex-end;
+  }
 
   /* FEATURES */
   .features .grid,
