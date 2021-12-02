@@ -324,6 +324,32 @@ pre {
   }
 }
 
+.button__wrapper{
+  position: fixed;
+  right: 0;
+  bottom: 30%;
+}
+
+#slide-button {
+  width: 5rem;
+  height: 2rem;
+  background-color: #008800;
+}
+
+
+.btn-hidden {
+  margin-right: -2rem;
+
+}
+
+.btn-extended {
+  margin-right: 0;
+}
+
+.button__wrapper img {
+  width: 200px;
+}
+
 /* --- MEDIA --- */
 @media screen and (min-width: 768px) {
   .stats .grid,
